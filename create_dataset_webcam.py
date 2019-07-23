@@ -10,10 +10,10 @@ cam.set(cv2.CAP_PROP_FRAME_HEIGHT, 480)
 cam.set(cv2.CAP_PROP_FRAME_WIDTH, 640) 
 
 
-dataset = 'C:\\Users\\jikhjo\\Desktop\\dataset\\new_dataset\\'
-label = int(input('Enter label: '))
-num_of_images = int(input('Enter number of images that you want to be taken: '))
-starting_num = int(input('Enter starting image number: '))
+dataset = '....\\new_dataset\\'    '''device folder to save dataset '''
+label = int(input('Enter label: '))  '''type of emotion - rep folder name in number eg: happy as 1,sad as 2..,'''
+num_of_images = int(input('Enter number of images that you want to be taken: ')) ''' Number of images per emotion'''
+starting_num = int(input('Enter starting image number: ')) 
 count_images = starting_num
 is_capturing = False
 if not os.path.exists(dataset+str(label)):
